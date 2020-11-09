@@ -1,0 +1,34 @@
+object Form2: TForm2
+  Left = 251
+  Height = 668
+  Top = 95
+  Width = 1206
+  Caption = 'Form2'
+  ClientHeight = 668
+  ClientWidth = 1206
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 1088
+    Height = 81
+    Top = 587
+    Width = 115
+    Caption = 'Вернуться'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 234
+    Height = 478
+    Top = 63
+    Width = 801
+    Lines.Strings = (
+      ''
+      ' 1)Чтобы посмотреть "Какие есть книги" нужно выбрать в FROM раздел books , в SELECT title и нажать кнопку one.'
+      ' 2) Чтобы посмотреть" Кто записан в библеотеку " нужно выбрать в FROM раздел members , в SELECT выбрать firstname ,нажать кнопку one.'
+      ' 3) Чтобы посмотреть, когда брали книгу нужно выбрать в FROM раздел borrowings В SELECT выбрать borrowdate , нажать кнопку one'
+    )
+    OnChange = Memo1Change
+    ReadOnly = True
+    TabOrder = 1
+  end
+end
